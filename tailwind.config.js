@@ -1,6 +1,5 @@
-import type { Config } from 'tailwindcss'
-
-const config: Config = {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -8,7 +7,7 @@ const config: Config = {
   ],
   theme: {
     extend: {
-       color: {
+      colors: {
         'nav-border': '#EBEAEA',
         'light-white': '#FAFAFB',
         'light-white-100': '#F1F4F5',
@@ -21,18 +20,17 @@ const config: Config = {
         'black-100': '#252525',
         'primary-purple': '#9747FF',
         'gray-50': '#D9D9D9',
-       },
-       boxShadow: {
-        menu: '0px 159px 95px rgba(13,12,34,0.01), 0px 71px 71px rgba(13,12,34,0.02), 0px 18px 39px rgba(13,12,34,0.02), 0px 0px 0px rgba(13,12,34,0.02)',
-       },
-       screens: {
-        'xs': '400px',
-       },
-       maxWidth: {
-        '10xl': '1680px'
-       },
       },
+      boxShadow: {
+        menu: '0px 159px 95px rgba(13,12,34,0.01), 0px 71px 71px rgba(13,12,34,0.02), 0px 18px 39px rgba(13,12,34,0.02), 0px 0px 0px rgba(13,12,34,0.02)',
+      },
+      screens: {
+        'xs': '400px',
+      },
+      maxWidth: {
+        '10xl': '1680px'
+      }
     },
+  },
   plugins: [],
-}
-export default config
+};
