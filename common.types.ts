@@ -1,6 +1,6 @@
 import { User, Session } from 'next-auth'
 
-export type FormState = {
+export type FromState = {
     title: string;
     description: string;
     image: string;
